@@ -1,0 +1,13 @@
+#container{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img-profile{
+  text-align: center;
+}
+
+.center{
+  text-align: center;
+}
