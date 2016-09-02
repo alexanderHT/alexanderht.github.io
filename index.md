@@ -1,1 +1,0 @@
-# *Alexnader Hendrawan T*
