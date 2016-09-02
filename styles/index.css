@@ -131,14 +131,17 @@ figure{
 
 .color-blue{
   color: blue;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .color-red{
   color: red;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .color-yellow{
   color: yellow;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 /* css animation */

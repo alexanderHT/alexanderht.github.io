@@ -10,6 +10,18 @@
       <link rel="icon" href="images\Novel-50.ico" type="image/x-icon"/>
       <!-- link to css -->
       <link rel="stylesheet" href="styles\index.css" media="screen" title="no title" charset="utf-8">
+
+      <style media="screen">
+        #form{
+          width: 45%;
+          height: 100%;
+          margin-top: 2%;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 3%;
+          box-shadow: 0px 0px 59px 0px #000000;
+        }
+      </style>
   </head>
 
   <body>
@@ -66,6 +78,69 @@
 
     </div>
     <!-- content -->
+
+    <!-- form -->
+    <div id="form">
+      <form action="#" method="get">
+        <fieldset>
+          <legend><h3>Kontak Saya:</h3></legend>
+
+            <br>
+            <b>Nama Lengkap:</b>
+            <br>
+              <input type="text" placeholder="Nama anda">
+            <br>
+            <br>
+
+            <b>Alamat Email:</b>
+            <br>
+              <input type="text" placeholder="Alamat Email">
+            <br>
+            <br>
+
+            <b>Pesan:</b>
+            <br>
+              <textarea rows="4" cols="50">
+              </textarea>
+            <br>
+            <br>
+
+            <p>
+              Apa Hobby anda?
+              <br>
+              <input type="checkbox" name="input1" value="Bike">Basket<br>
+              <input type="checkbox" name="input2" value="Bike">Balap Mobil<br>
+              <input type="checkbox" name="input3" value="Bike">Games<br>
+              <input type="checkbox" name="input4" value="Bike">Browsing<br>
+            </p>
+            <br>
+
+            <p>
+              Jenis Kelamin Anda
+              <br>
+              <input type="radio" name="input-radio" value="pria"> Pria <br>
+              <input type="radio" name="input-radio" value="wanita"> Wanita <br>
+            </p>
+            <br>
+
+            <p>
+              Bahasa Pemrograman favorit?
+              <select name="bahasa">
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+                <option value="javascript">javascript</option>
+                <option value="php">php</option>
+              </select>
+            </p>
+
+            <button type="submit" name="button">Kirim</button>
+
+        </fieldset>
+      </form>
+    </div>
+    <!-- form -->
 
     <!-- nav footer -->
     <footer id="nav-footer">
