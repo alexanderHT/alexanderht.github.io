@@ -41,7 +41,7 @@ while(bool){
   var nama = "";
   var email= "";
   var telepon = "";
-  
+
   // mengambil inputan dari user
   var pilih = prompt("masukan pilihan anda (1: Menambahkan daftar kotak, 2: Menampilkan semua daftar kotak, 3: Menampilkan daftar kotak yang di cari, 4: keluar) ");
 
