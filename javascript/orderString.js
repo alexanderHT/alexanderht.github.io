@@ -1,6 +1,7 @@
 var input = prompt("inputkan sebuah kata");
 
 var orderString = function(input){
+
   // variable
   var urut = [];
   var kataAwal = input;
