@@ -7,7 +7,7 @@ var Pilihanlawan = function(){
   // menentukan pilihan dari variable acak
   if (acak < 0.34) {
     return "batu";
-  } else if(acak <= 0.67) {
+  } else if(acak > 0.33  || acak < 0.67) {
   	return "kertas";
   } else {
   	return "gunting";
