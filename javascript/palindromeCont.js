@@ -10,9 +10,9 @@ var palindromeCont = function(input){
   console.log(akhir.join(" "));
 
   if(awal.length = akhir.length){
-    console.log("benar");
+    return true;
   }else{
-    console.log("salah");
+    return false;
   }
 }
 
