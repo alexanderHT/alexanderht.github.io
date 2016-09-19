@@ -37,4 +37,4 @@ var indexPrima = function(index){
 
 indexPrima(index);
 console.log(prima);
-console.log("index ke [ " + index + " ]" + " bilangan primanya adalah : " +  prima[index]);
+console.log("index ke [ " + index + " ]" + " bilangan primanya adalah : " +  prima[index - 1]);
