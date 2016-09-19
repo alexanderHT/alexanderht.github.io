@@ -1,39 +1,40 @@
-var bilanganprima = [2];
-var input = prompt("masukan index dari bilangan prima?");
-var number = Number(input);
+var input = Number(prompt("masukan bilangan prima"));
+var index = input;
+var prima = [2];
 
-var indexPrima = function(number){
-  var max = number * 10;
-//
-  for (var i = 2; i < max; i++) {
+var cekBilanganPrima = function(input){
+  var x = Number(input);
+  var bool;
 
-    for(var j =2; j < i; j++){
-
-      if(i % 2 === 0){
+  if ( x === 2) {
+    bool = true;
+  }else {
+    for (i = 2 ; i < x ; i++){
+      if (x % i === 0) {
+        bool = false;
+        break;
       }else{
-        bilanganprima[bilanganprima.length] = i;
+        bool = true;
       }
-
     }
-
   }
-//
+  if (bool) {
+    return x;
+  }
+  else {
+    return 0;
+  }
 }
 
-console.log(bilanganprima);
+var indexPrima = function(index){
+  var max = input * 10;
+  for(var j = 3; j < max; j++){
+    if(cekBilanganPrima(j)){
+      prima[prima.length] = cekBilanganPrima(j);
+    }
+  }
+}
 
-indexPrima(number);
-
-console.log(bilanganprima);
-document.write("hallo");
-
-document.getElementById("opening").innerHTML = "<h1>Hello!</h1>";
-
-// var number = [1];
-// console.log(number);
-//
-// for (var i = 0; i < 10; i++) {
-//   number[number.length] = i;
-// }
-// console.log(number);
-// console.log(number[7]);
+indexPrima(index);
+console.log(prima);
+console.log("index ke [ " + index + " ]" + " bilangan primanya adalah : " +  prima[index]);
