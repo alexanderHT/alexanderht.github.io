@@ -16,8 +16,11 @@ for(var j = 0; j < max; j++){
   myArray[myArray.length] = input;
 }
 
+console.log("Inputan : " + myArray);
+
 function array1(myArray){
   // varibale local
+  myArray.sort();
   var jumlah = 0;
   var terakhir = myArray[myArray.length - 1];
 
@@ -27,7 +30,6 @@ function array1(myArray){
   }
 
   // cetak isi array, hasil jumlah sebelum array terakhir, dan array terakhir
-  console.log("Isi array yang di inputkan : " + myArray);
   console.log("Hasil Jumlah : " + jumlah);
   console.log("Nilai dari Index terakhir :" + terakhir);
 
