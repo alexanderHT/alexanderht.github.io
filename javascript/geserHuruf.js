@@ -4,6 +4,14 @@ var input = prompt("masukan sebuah kalimat?").split("");
 var angka = Number(prompt("masukan angka pergeseran?"));
 var kalimatGeser = "";
 
+var cek = function(cek){
+  if(cek >= 26){
+    return cek - 26;
+  }else{
+    return cek;
+  }
+}
+
 var geserHuruf = function(input, angka){
   // variable local
   var tampung = "";
@@ -13,10 +21,11 @@ var geserHuruf = function(input, angka){
     if(input[i] === " "){
       kalimatGeser += " ";
     }else if(input[i] === input[i].toUpperCase()){
-      tampung = alpha[alpha.indexOf(input[i].toLowerCase()) + angka].toUpperCase();
+
+      tampung = alpha[cek(alpha.indexOf(input[i].toLowerCase()) + angka)].toUpperCase();
       kalimatGeser += tampung;
     }else{
-      tampung = alpha[alpha.indexOf(input[i]) + angka];
+      tampung = alpha[cek(alpha.indexOf(input[i]) + angka)];
       kalimatGeser += tampung;
     }
   }
