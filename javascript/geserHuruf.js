@@ -5,8 +5,8 @@ var angka = Number(prompt("masukan angka pergeseran?"));
 var kalimatGeser = "";
 
 var cek = function(cek){
-  if(cek >= 26){
-    return cek - 26;
+  if(cek >= alpha.length){
+    return cek - alpha.length;
   }else{
     return cek;
   }
