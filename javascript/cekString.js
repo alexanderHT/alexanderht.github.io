@@ -7,7 +7,6 @@ console.log(input2);
 var cekString = function(input1, input2){
   i = 0;
   var status = true;
-  var run_looping = true
 
   while(status){
     console.log("i: ",i)
