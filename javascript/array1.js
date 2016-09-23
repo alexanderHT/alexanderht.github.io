@@ -20,7 +20,7 @@ console.log("Inputan : " + myArray);
 
 function array1(myArray){
   // varibale local
-  myArray.sort();
+  myArray.sort(function(a,b){return a-b});
   var jumlah = 0;
   var terakhir = myArray[myArray.length - 1];
 
